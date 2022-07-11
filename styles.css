@@ -1,0 +1,234 @@
+Default value reset * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+
+body {
+    line-height: 1;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+
+
+ol,
+ul {
+    list-style: none;
+    margin: 0;
+
+}
+
+blockquote,
+q {
+    quotes: none;
+    margin: 0;
+
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+    margin: 0;
+
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0;
+
+
+}
+
+body,
+html {
+    box-sizing: border-box;
+    width: 100%;
+
+}
+
+
+/* First Animation */
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.task-1 {
+    width: 1000px;
+    height: 250px;
+    background-color: rgb(241, 239, 227);
+    position: absolute;
+    top: 75px;
+    bottom: 0;
+
+}
+
+
+
+
+
+.wrapper {
+    width: 100px;
+    height: 100px;
+    border: solid;
+    position: absolute;
+
+    top: 75px;
+    left: 450px;
+
+    background-color: rgb(0, 0, 0);
+
+}
+
+
+
+.greenSword {
+    position: relative;
+    left: 45px;
+    height: 100px;
+    width: 8px;
+    top: 0px;
+    transform: rotate(45deg);
+
+    background: linear-gradient(180deg, rgb(79, 178, 102) 0%, rgb(79, 178, 102) 74%, rgb(0, 0, 0) 74%, rgb(0, 0, 0) 90%, rgb(79, 178, 102) 90%, rgb(79, 178, 102) 100%);
+    box-shadow: 3px 6px 20px 5px rgba(52, 255, 33, 1);
+
+
+}
+
+
+
+.redSword {
+    position: relative;
+    height: 100px;
+    width: 8px;
+    transform: rotate(-45deg);
+    left: 45px;
+    top: -100px;
+
+    background: linear-gradient(180deg, rgb(232, 131, 131) 0%, rgb(232, 131, 131) 74%, rgb(0, 0, 0) 74%, rgb(0, 0, 0) 90%, rgb(232, 131, 131) 90%, rgb(232, 131, 131) 100%);
+
+    box-shadow: 3px 3px 20px 5px rgb(251, 52, 22);
+
+}
+
+.wrapper:hover {
+    cursor: pointer;
+}
+
+.wrapper:hover>.greenSword {
+    top: 25px;
+    transform: rotate(90deg) scale(0.7);
+
+    background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 74%, rgb(0, 0, 0) 74%, rgb(0, 0, 0) 90%, rgb(255, 255, 255) 90%, rgb(255, 255, 255) 100%);
+    box-shadow: none;
+}
+
+.wrapper:hover>.redSword {
+    transform: rotate(-90deg) scale(0.7);
+    background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 74%, rgb(0, 0, 0) 74%, rgb(0, 0, 0) 90%, rgb(255, 255, 255) 90%, rgb(255, 255, 255) 100%);
+    box-shadow: none;
+}
+
+.wrapper:hover>.item-1 {
+    position: relative;
+    left: 45px;
+    height: 100px;
+    width: 8px;
+    top: -225px;
+    transform: rotate(-90deg) scale(0.7);
+
+    background: linear-gradient(360deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 74%, rgb(0, 0, 0) 74%, rgb(0, 0, 0) 90%, rgb(255, 255, 255) 90%, rgb(255, 255, 255) 100%);
+
+}
+
+
+/* task2 */
+
+
+.task-2 {
+    width: 1000px;
+    height: 250px;
+    background-color: rgb(241, 239, 227);
+    position: absolute;
+    top: 350px;
+    bottom: 0;
+
+}
+
+.wrapper-2{
+    width: 500px;
+    height: 150px;
+    position: absolute;
+    top: 25px;
+    left: 250px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.circle{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0px 45px 23px -15px rgb(79, 79, 86)
+}
+@keyframes firstCircle {
+
+    to{
+        bottom: 25px;
+        left: -75px;
+    }
+}
+
+@keyframes lastCircle {
+    to{
+        bottom: 25px;
+        left: 75px;
+    }
+}
+.circle-1{
+    background: linear-gradient(to right, #142764, #1034A6 );
+    animation: firstCircle 0.8s forwards 0s infinite ease-in-out;
+    
+}
+.circle-2{
+    background: linear-gradient(to right, #1034A6, #412F88 );
+}
+.circle-3{
+    background: linear-gradient(to right, #412F88, #722B6A );
+}
+.circle-4{
+    background: linear-gradient(to right, #722B6A, #A2264B );
+}
+.circle-5{
+    background: linear-gradient(to right, #A2264B, #D3212D );
+}
+.circle-6{
+    background: linear-gradient(to right, #D3212D, #F62D2D );
+}
+.circle-7{
+    background: linear-gradient(to right, #F62D2D, #f74129 );
+    animation: lastCircle 0.8s forwards 0.4s infinite ease-in-out;
+    
+}
+
+
+
